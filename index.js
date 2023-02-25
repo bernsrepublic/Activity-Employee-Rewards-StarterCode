@@ -15,15 +15,43 @@ Otherwise output:'Ship $350.00 Gift Card'
 Otherwise output:'Ship set of knives'
 */
 
-
 // Variable declaration
 let associateBanker = [56123, 5, 1]; //employeeId, checking, years
-let empId = associateBanker[0]       //employee Id number
-let empChecking = associateBanker[1] //number of new checking 
-let empYears = associateBanker[2];   //years employed
+let empId = associateBanker[0]; //employee Id number
+let empChecking = associateBanker[1]; //number of new checking
+let empYears = associateBanker[2]; //years employed
 
 // Continue same pattern/naming convention for each banker
 // leaving only one variable declaration section uncommented each 'Run'
+if (empYears == 1) {
+  if (empChecking >= 1) {
+    console.log("Ship $50.00 Amazon Gift Card");
+  } else {
+    console.log("Incentives not met");
+  }
+} else if (empYears == 2) {
+  if (empChecking >= 3) {
+    console.log("Ship $400.00 Visa Gift Card");
+  } else {
+    console.log("Ship $100.00 Visa Gift Card");
+  }
+} else if (empYears == 3) {
+  if (empChecking >= 2) {
+    console.log("Ship $700.00 Visa Gift Card");
+  } else {
+    console.log("Ship $350.00 Visa Gift Card");
+  }
+} else if (empYears >= 5) {
+  if (empChecking !== 0) {
+    console.log("Ship $3500.00 Visa Gift Card");
+  } else {
+    console.log("Ship set of knives");
+  }
+} else if (empYears == 0) {
+  console.log("Not eligible for gift");
+}
+
+// console.log(empId + " : Processed");
 
 /* 
 let seniorBanker = [77227, 1, 2]
@@ -32,12 +60,7 @@ let empChecking = seniorBanker[1]
 let empYears = seniorBanker[2];   
 */
 
-
 //<--Your code goes here-->
 
-
 // Output when activity is complete
-console.log(`${empId}: Processed`)
-
-    
-   
+console.log(`${empId}: Processed`);
