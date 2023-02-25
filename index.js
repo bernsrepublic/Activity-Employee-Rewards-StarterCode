@@ -51,7 +51,7 @@ if (empYears == 1) {
   console.log("Not eligible for gift");
 }
 
-// console.log(empId + " : Processed");
+//  console.log(empId + " : Processed");
 
 /* 
 let seniorBanker = [77227, 1, 2]
